@@ -1,0 +1,21 @@
+{
+  "welcome": "Bienvenido",
+  "slogan": "Promover la dignidad, la seguridad y la integración sostenible de inmigrantes y refugiados.",
+  "about": "Sobre nosotros",
+  "domains": "Áreas de intervención",
+  "join": "Únete a nosotros",
+  "contact": "Contacto",
+  "become_volunteer": "Hacerse voluntario",
+  "donate": "Donar",
+  "domain_housing": "Alojamiento",
+"domain_education": "Educación",
+"domain_job": "Integración profesional",
+"domain_health": "Salud mental y cuidados",
+"domain_legal": "Asistencia legal",
+"donate_intro": "Tu apoyo permite a ARDH ayudar a más refugiados y familias vulnerables. ¡Gracias por tu generosidad!",
+"your_name": "Tu nombre",
+"amount": "Cantidad (USD)",
+"your_message": "Tu mensaje (opcional)"
+
+
+}
