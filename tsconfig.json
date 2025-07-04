@@ -14,7 +14,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": ".",                // <--- ajouté pour que paths fonctionne
+    "paths": {
+      "@components/*": ["components/*"]
+    }
   },
   "include": [
     "pages/**/*.ts",
