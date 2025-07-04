@@ -17,8 +17,13 @@
     "types": ["node"]
   },
   "include": [
-    "frontend/**/*.ts",
-    "frontend/**/*.tsx"
+    "pages/**/*.ts",
+    "pages/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "styles/**/*.ts",
+    "styles/**/*.tsx",
+    "backend/src/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
