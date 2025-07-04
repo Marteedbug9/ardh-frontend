@@ -2,8 +2,7 @@ module.exports = {
   i18n: {
     defaultLocale: 'fr',
     locales: ['fr', 'en', 'es', 'ht'],
-    localeDetection: true,
+    localeDetection: false, // tester false au lieu de true
   },
-  // Optionnel : dossier où sont stockées les traductions
   localePath: './public/local',
-}
+};

@@ -7,5 +7,5 @@ module.exports = {
     config.resolve.alias['@components'] = path.join(__dirname, 'components');
     return config;
   },
-  // ajoute ici d’autres options Next.js si besoin
+  // autres options Next.js ici si besoin
 };
