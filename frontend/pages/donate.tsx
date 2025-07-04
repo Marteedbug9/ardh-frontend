@@ -1,14 +1,18 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
+import { GetStaticPropsContext } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 export default function Donate() {
-  const { t } = useTranslation('common')
+  const { t } = useTranslation('common');
 
   return (
     <main className="flex flex-col items-center py-8">
       <h1 className="text-3xl font-bold mb-6">{t('donate')}</h1>
       <p className="mb-6 text-center max-w-lg">
-        {t('donate_intro', 'Votre soutien permet à ARDH d’accompagner plus de réfugiés et de familles vulnérables. Merci pour votre générosité !')}
+        {t(
+          'donate_intro',
+          'Votre soutien permet à ARDH d’accompagner plus de réfugiés et de familles vulnérables. Merci pour votre générosité !'
+        )}
       </p>
 
       <form className="flex flex-col gap-4 w-full max-w-md bg-white p-6 rounded shadow">
@@ -46,13 +50,13 @@ export default function Donate() {
         </button>
       </form>
     </main>
-  )
+  );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale ?? 'fr', ['common'])),
     },
-  }
+  };
 }
